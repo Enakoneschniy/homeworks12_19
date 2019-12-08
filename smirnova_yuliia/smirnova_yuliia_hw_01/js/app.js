@@ -12,4 +12,18 @@ if (a > b) {
 }
 
 
+//task_02
+//     task_02_01
+let coordinateX = prompt('Координата по оси X', )
+let coordinateY = prompt('Координата по оси Y', )
+
+// y>=-x+1
+if (coordinateY>= 1 - coordinateX){
+    alert("Точка попадает в область")
+} else {
+    alert("Точка НЕ попадает в область")
+}
+
+
+
 
