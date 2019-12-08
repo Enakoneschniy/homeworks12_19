@@ -59,4 +59,14 @@ let userInputNumberSecond = prompt("Введите второе число", );
         alert(userInputNumberSecond)
     }
 
-    
+//task_05
+let userInputNumberOne = prompt("Введите первое число", );
+let userInputNumberTwo = prompt("Введите второе число", );
+if (userInputNumberOne > userInputNumberTwo) {
+    alert(userInputNumberOne)
+} else if (userInputNumberTwo > userInputNumberOne){
+    alert(userInputNumberTwo)
+} else if (userInputNumberTwo === userInputNumberOne){
+    alert('Числа равны')
+}
+
