@@ -3,13 +3,13 @@
 let a = 3;
     b = 6;
 
-if (a > b) {
-    console.log(x = a + b / 2 * 4)
-} else if (a === b){
-    console.log(x = 400)
-} else if (a < b ) {
-    console.log(x = a - b + 2 / b * 4)
-}
+    if (a > b) {
+        console.log(x = a + b / 2 * 4)
+    } else if (a === b){
+        console.log(x = 400)
+    } else if (a < b ) {
+        console.log(x = a - b + 2 / b * 4)
+    }
 
 
 // //task_02
@@ -62,13 +62,13 @@ let userInputNumberSecond = prompt("Введите второе число", );
 //task_05
 let userInputNumberOne = prompt("Введите первое число", );
 let userInputNumberTwo = prompt("Введите второе число", );
-if (userInputNumberOne > userInputNumberTwo) {
-    alert(userInputNumberOne)
-} else if (userInputNumberTwo > userInputNumberOne){
-    alert(userInputNumberTwo)
-} else if (userInputNumberTwo === userInputNumberOne){
-    alert('Числа равны')
-}
+    if (userInputNumberOne > userInputNumberTwo) {
+        alert(userInputNumberOne)
+    } else if (userInputNumberTwo > userInputNumberOne){
+        alert(userInputNumberTwo)
+    } else if (userInputNumberTwo === userInputNumberOne){
+        alert('Числа равны')
+    }
 
 //task_06
 let apartmentNumber = prompt('Введите номер квартиры');
@@ -81,12 +81,12 @@ let apartmentNumber = prompt('Введите номер квартиры');
     } else {
         alert("Такой квартиры нет. В этом доме квартиры с номерами 1-90")
     }
-//task_07
 
-let userLogin = prompt("Введите ваш логин"),
+//task_07
+let userLogin = prompt("Введите ваш логин");
     userPassword = prompt("Введите ваш пароль");
-if (userLogin === 'ivan' && userPassword == 334455) {
-        alert("Добро пожаловать")
+    if (userLogin === 'ivan' && userPassword == 334455) {
+            alert("Добро пожаловать")
     } else if (userLogin === 'alex' && userPassword == 777){
         alert("Добро пожаловать")
     } else if (userLogin === 'petr' && userPassword == b5678){
@@ -94,5 +94,19 @@ if (userLogin === 'ivan' && userPassword == 334455) {
     } else {
         alert("Ошибка входа")
     }
+
+//task_08
+let userYearOfBirth = prompt("Введите ваш год рождения");
+let userAge = 2019 - userYearOfBirth;
+    if (userAge >= 16) {
+        alert("Добро пожаловать")
+    } else {
+        alert("Вход воспрещен")
+    }
+
+
+
+
+
 
 
