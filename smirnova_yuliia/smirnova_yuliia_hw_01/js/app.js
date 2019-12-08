@@ -85,11 +85,11 @@ let apartmentNumber = prompt('Введите номер квартиры');
 //task_07
 let userLogin = prompt("Введите ваш логин");
     userPassword = prompt("Введите ваш пароль");
-    if (userLogin === 'ivan' && userPassword == 334455) {
+    if (userLogin === 'ivan' && userPassword === 334455) {
             alert("Добро пожаловать")
-    } else if (userLogin === 'alex' && userPassword == 777){
+    } else if (userLogin === 'alex' && userPassword === 777){
         alert("Добро пожаловать")
-    } else if (userLogin === 'petr' && userPassword == b5678){
+    } else if (userLogin === 'petr' && userPassword === b5678){
         alert("Добро пожаловать")
     } else {
         alert("Ошибка входа")
@@ -103,6 +103,21 @@ let userAge = 2019 - userYearOfBirth;
     } else {
         alert("Вход воспрещен")
     }
+
+//task_09
+let workExperience = prompt("Введите ваш стаж работы (кол-во лет)");
+let salaryAllowance = '';
+    if (workExperience >= 0 && workExperience <= 3) {
+        alert("Ваша надбавка к зарплате 0%")
+    } else if (workExperience >= 3 && workExperience <= 10) {
+        alert("Ваша надбавка к зарплате 10%")
+    } else if (workExperience >= 10 && workExperience <= 20) {
+        alert("Ваша надбавка к зарплате 20%")
+    } else if (workExperience >= 20 ) {
+        alert("Ваша надбавка к зарплате 25%")
+    }
+
+
 
 
 
