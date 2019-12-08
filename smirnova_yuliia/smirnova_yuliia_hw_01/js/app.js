@@ -79,5 +79,20 @@ let apartmentNumber = prompt('Введите номер квартиры');
     } else if (apartmentNumber >= 48 && apartmentNumber <= 90) {
         alert("Квартира находится в подъезде №3")
     } else {
-        alert("В этом доме квартиры с номерами 1-90")
+        alert("Такой квартиры нет. В этом доме квартиры с номерами 1-90")
     }
+//task_07
+
+let userLogin = prompt("Введите ваш логин"),
+    userPassword = prompt("Введите ваш пароль");
+if (userLogin === 'ivan' && userPassword == 334455) {
+        alert("Добро пожаловать")
+    } else if (userLogin === 'alex' && userPassword == 777){
+        alert("Добро пожаловать")
+    } else if (userLogin === 'petr' && userPassword == b5678){
+        alert("Добро пожаловать")
+    } else {
+        alert("Ошибка входа")
+    }
+
+
