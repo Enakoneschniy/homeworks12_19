@@ -49,3 +49,14 @@ let weekNumber = prompt("Введите номер дня недели", );
         alert("Такого дня недели не существует!")
 }
 
+//task_04
+
+let userInputNumberFirst = prompt("Введите первое число", );
+let userInputNumberSecond = prompt("Введите второе число", );
+    if (userInputNumberFirst > userInputNumberSecond) {
+        alert(userInputNumberFirst)
+    } else if (userInputNumberSecond > userInputNumberFirst){
+        alert(userInputNumberSecond)
+    }
+
+    
