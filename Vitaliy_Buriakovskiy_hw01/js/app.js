@@ -75,7 +75,7 @@
         let y0 = prompt("Enter a number b =");
 
         let rezult1 = includedInTriangle(xa, xb, xc, x0, ya, yb, yc, y0);
-        let rezult2 = (x0-xPointCircle)**2+(y0-yPointCircle)**2<=radiusCircle**2;
+        let rezult2 = (x0 - xPointCircle) ** 2 + (y0 - yPointCircle) ** 2 <= radiusCircle ** 2;
         if (rezult1 || rezult2) {
             console.log(`Poin included in Triangle = ${'True'}`);
         } else {
@@ -166,10 +166,10 @@
     for (let i = 0; i < name.length; i++) {
         if (name[i] === inputName) {
             if (password[i] === inputPassword) {
-                rezult =`Welcome ${name[i]}!`;
+                rezult = `Welcome ${name[i]}!`;
                 break;
             }
-        }else {
+        } else {
             continue;
         }
     }
@@ -216,18 +216,89 @@
 {
     console.log(`Task №10`);
 
-    let inputExperience = prompt("Enter your work experience.");
-    for (let i = 0; i < inputExperience.length; i++) {
-        if ((inputExperience[i]==='.')|| (inputExperience[i]===',')){
-            console.log(inputExperience[i-1]);
-            break;
+    let word;
+    let count;
+    let inputItem = prompt("Enter the quantity of the purchased item.");
+
+    count = inputItem;
+    if (count < 0) {
+        alert("Mistake. The quantity of goods can not be less than zero.")
+    } else {
+        if (count % 1 !== 0) {
+            word = "Товара";
+        } else {  // Check the divisibility of a number. If fractional then the answer is one.
+            count = count - count % 1; // Separate the fractional part if there is and separate the last 2 numbers.
+            if (count >= 100) {
+                count = count - (count / 100 - (count / 100) % 1) * 100;
+            }
+            if (count > 10 && count < 20) {
+                word = "Товаров";
+            } else {
+                count = count - (count / 10 - (count / 10) % 1) * 10;
+            }
+
+            if (count === 1) {
+                word = "Товар";
+            } else if (count >= 2 && count <= 5) {
+                word = "Товара";
+            } else if ((count >= 6 && count <= 9) || count === 0) {
+                word = "Товаров";
+            } else if (count > 10 && count < 20) {
+
+            } else {
+                alert("Fatal error.");
+            }
         }
     }
 
+    console.log(`Вы заказали ${inputItem} ${word}`);
+}
+{
+    console.log(`Task №11`);
+    let account = 500;
 
-    inputExperience = inputExperience.replace(',', '.');
-    inputExperience = inputExperience.substr(0, inputExperience.indexOf('.'));
-    //  inputExperience=inputExperience/100;
-    console.log(inputExperience);
+    let paid = Number(prompt(`Good afternoon. Pay the bill for the amount ${account} USD.`));
 
+
+    while (paid < account) {
+        paid = paid + Number(prompt(`The amount is insufficient. Lack ${account - paid} USD`));
+    }
+
+    if (paid > account) {
+        alert(`The bill is paid. Delivery ${paid - account}`);
+    } else if (paid === account) {
+        alert(`The bill is paid.`);
+    }
+}
+{
+    console.log(`Task №12`);
+
+    let price = [["Coffee", 10], ["MacCoffee", 15], ["Moccachino", 18], ["americano", 20]];
+    let giveGoods = false;
+
+    let paid = Number(prompt(`Deposit money USD.`));
+    let selctItem = Number(prompt("Select item"));
+
+    while (!giveGoods) {
+        for (let i = 0; i < price.length; i++) {
+            if (i === selctItem) {
+                if (paid >= price[i][1]) {
+                    console.log(`The bill is paid ${price[i][0]}.`);
+                    paid = paid - price[i][1];
+                    giveGoods = true;
+                } else {
+                    console.log("Not enough money. Choose another product.");
+                }
+            } else if (i>=price.length) {
+                console.log("Mistake. Such a product does not exist. Repeat the selection.");
+                break;
+            }
+        }
+    }
+    if (giveGoods = true) {
+        console.log(`Your delivery ${paid}`);
+        paid = 0;
+        giveGoods = false;
+        console.log("Pick up your goods");
+    }
 }
