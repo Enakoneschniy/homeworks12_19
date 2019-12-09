@@ -129,6 +129,9 @@ if (lastNumber == 1) {
     alert(`У вас в корзине ${itemAmount + ' ' + itemWord  + 'ов'}`)
 }
 
+//task_11
+
+
 
 
 
