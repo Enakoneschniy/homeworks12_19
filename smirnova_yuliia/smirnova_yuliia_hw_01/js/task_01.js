@@ -1,5 +1,5 @@
 let a = 3;
-b = 6;
+let b = 6;
 
 if (a > b) {
     console.log(x = a + b / 2 * 4)
