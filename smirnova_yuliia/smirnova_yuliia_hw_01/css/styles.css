@@ -14,7 +14,7 @@ h1 {
     min-width: 580px;
 }
 
-header {
+header, footer {
     background-color: #739FBE;
     color: white;
     padding: 30px 0;

@@ -1,40 +1,34 @@
 //Types of items in the shop
 let chewingGum = "Жевательная резинка";
-let chewingGumBrand = ["Orbit", "Dirol"];
-let chewingGumTaste = ["Фруктовый","Мятный"];
-
+let chewingGumBrands = ["Orbit", "Dirol"];
+let chewingGumTastes = ["Фруктовый","Мятный"];
 let cigarettes = "Сигареты";
-let cigarettesBrand = ["Ватра", "Парламент"];
-let cigarettesTaste = ["Без вкуса", "Ментол", "Шоколад"];
-
-let drinks = "Напитки";
-let drinksVolume = ["0.33", "0.5", "1"];
-let drinksType = ["Алкогольный", "Безалкогольный"];
-let drinksAlcoholic = ["Пиво"];
-let drinksAlcoholicBrand = ["Оболонь", "Corona", "Черниговское"];
-let drinksNonAlcoholic = ["Сок", "Вода", "Энергетик"];
-let drinksJuiceBrand = ["Rich", "Jaffa", "Добрый"];
-let drinksJuiceTaste = ["Мультифрукт", "Апельсин", "Томат"];
-let drinksWaterBrand = ["Бонаква", "Морщинська", "Боржоми"];
-let drinksWaterType = ["Сильногазированная", "Слабогазированная", "Негазированная"];
-let drinksEnergeticBrand = ["Red Bull", "Revo"];
-
-let buyerChoice = prompt("Здравствуйте, что будете заказывать?");
-// switch (buyerChoice) {
-//     case 'Жевательная резинка':
-//         alert('Orbit или Dirol?');
-//         switch (buyerChoice) {
-//         }
-// }
-//     case '2':
-//         alert( 'Два' );
-//         break;
-//
-//     case 3:
-//         alert( 'Никогда не выполнится!' );
-//         break;
-//     default:
-//         alert( 'Неизвестное значение' );
-// }
+let cigarettesBrands = ["Ватра", "Парламент"];
+let cigarettesTastes = ["Без вкуса", "Ментол", "Шоколад"];
 
 
+let itemAmount;
+let itemList = [chewingGum, cigarettes];
+let buyerAnswers = ["Да", "Нет"];
+let itemPrice = 100500;
+let buyerInput = prompt("Здравствуйте, что будете заказывать?", itemList);
+if (buyerInput === chewingGum) {
+    let chewingGumBrand = prompt("Какой марки?", chewingGumBrands);
+    let chewingGumTaste = prompt("С каким вкусом?", chewingGumTastes);
+    let buyerAnswer = prompt(`Ваш заказ ${chewingGumBrand + chewingGumTaste}. Что-нибудь ещё?`, buyerAnswers);
+    if (buyerAnswer === "Да") {
+        prompt("Что ещё будете заказывать?", itemList);
+    } else {
+        prompt(`С вас ${itemPrice} + "тугриков"`);
+    }
+}
+
+if (buyerInput === cigarettes) {
+    prompt("Какой марки?", cigarettesBrand);
+if (cigarettesBrand[1] || cigarettesBrand[2]) {
+    prompt('Что-нибудь ещё?')
+}
+
+} else {
+    alert('Такого товара нет')
+}
