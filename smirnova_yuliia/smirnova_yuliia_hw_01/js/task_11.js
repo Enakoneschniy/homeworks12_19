@@ -24,7 +24,6 @@ switch (buyerChoice) {
     case 'Жевательная резинка':
         alert('Orbit или Dirol?');
         switch (buyerChoice) {
-
         }
 }
     case '2':
