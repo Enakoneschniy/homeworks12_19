@@ -20,21 +20,21 @@ let drinksWaterType = ["Сильногазированная", "Слабогаз
 let drinksEnergeticBrand = ["Red Bull", "Revo"];
 
 let buyerChoice = prompt("Здравствуйте, что будете заказывать?");
-switch (buyerChoice) {
-    case 'Жевательная резинка':
-        alert('Orbit или Dirol?');
-        switch (buyerChoice) {
-        }
-}
-    case '2':
-        alert( 'Два' );
-        break;
-
-    case 3:
-        alert( 'Никогда не выполнится!' );
-        break;
-    default:
-        alert( 'Неизвестное значение' );
-}
+// switch (buyerChoice) {
+//     case 'Жевательная резинка':
+//         alert('Orbit или Dirol?');
+//         switch (buyerChoice) {
+//         }
+// }
+//     case '2':
+//         alert( 'Два' );
+//         break;
+//
+//     case 3:
+//         alert( 'Никогда не выполнится!' );
+//         break;
+//     default:
+//         alert( 'Неизвестное значение' );
+// }
 
 
