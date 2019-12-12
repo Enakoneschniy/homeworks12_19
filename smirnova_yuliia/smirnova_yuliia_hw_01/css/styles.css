@@ -1,0 +1,38 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-size: 21px;
+    font-family: sans-serif;
+    text-align: center;
+    /* width: 100%; */
+    min-width: 600px;
+}
+
+h1 {
+    font-size: 40px;
+    width: 100%;
+    min-width: 580px;
+}
+
+header, footer {
+    background-color: #739FBE;
+    color: white;
+    padding: 30px 0;
+
+}
+
+.content-wrapper {
+    align-content: center;
+    flex: border-box;
+}
+
+.task-wrapper {
+    border-color: black;
+    border-width: 4px;
+    border-style: solid;
+    margin: 10px 10px;
+    padding: 10px 10px;
+
+}
+
+
