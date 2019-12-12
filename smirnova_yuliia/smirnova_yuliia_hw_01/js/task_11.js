@@ -19,16 +19,17 @@ if (buyerInput === chewingGum) {
     if (buyerAnswer === "Да") {
         prompt("Что ещё будете заказывать?", itemList);
     } else {
-        prompt(`С вас ${itemPrice} + "тугриков"`);
+        alert(`С вас ${itemPrice} + "тугриков"`);
     }
 }
 
 if (buyerInput === cigarettes) {
-    prompt("Какой марки?", cigarettesBrand);
-if (cigarettesBrand[1] || cigarettesBrand[2]) {
-    prompt('Что-нибудь ещё?')
-}
-
-} else {
-    alert('Такого товара нет')
+    let cigarettesBrand = prompt("Какой марки?", cigarettesBrands);
+    let cigarettesTaste = prompt("С каким вкусом?", cigarettesTastes);
+    let buyerAnswer = prompt(`Ваш заказ ${cigarettesBrand + cigarettesTaste}. Что-нибудь ещё?`, buyerAnswers);
+    if (buyerAnswer === "Да") {
+        prompt("Что ещё будете заказывать?", itemList);
+    } else {
+        alert(`С вас ${itemPrice} + "тугриков"`);
+    }
 }
