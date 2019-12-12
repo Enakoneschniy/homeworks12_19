@@ -18,7 +18,6 @@ for(let num3 = 654; num3 >=0; num3--) {
     console.log(num3);
 }
 
-
 // Task_04 Вывести все годы с 1983 до 2017
 
 console.log('-----task_04-----');
@@ -38,4 +37,48 @@ for(let num6 = 1; num6 <= 9; num6++) {
         console.log(num6*7);
     }
 
+// Task_07 Выведите с помощью цикла коды спецсимволов от 1000 до 2000. Напомню, что спецсимвол получается комбинацией &#число; Например ӆ
+console.log('-----task_07-----');
 
+for(let num7 = 1000; num7 <= 2000; num7++) {
+    console.log(`&#${num7}`);
+}
+
+// Task_08 Найти сумму чисел от 0 до 100 (включительно). (0+1+2+3+4+5).
+console.log('-----task_08-----');
+let num8 = 0;
+let sum8 = 0;
+for(let num8 = 1; num8 <= 100; num8++) {
+   sum8 = sum8 + num8;
+}
+console.log(sum8);
+
+// Task_09
+console.log('-----task_09-----');
+
+// Task_10
+console.log('-----task_10-----');
+
+// Task_11
+console.log('-----task_11-----');
+
+// Task_12
+console.log('-----task_13-----');
+
+// Task_14
+console.log('-----task_14-----');
+
+// Task_15
+console.log('-----task_15-----');
+
+// Task_16
+console.log('-----task_16-----');
+
+// Task_17
+console.log('-----task_17-----');
+
+// Task_18
+console.log('-----task_18-----');
+
+// Task_19
+console.log('-----task_19-----');
