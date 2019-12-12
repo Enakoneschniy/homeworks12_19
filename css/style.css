@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    /* width: 100%; */
+    min-width: 600px;
+}
+
+.coffeeMachine {
+    width: 80%;
+    margin: 5% auto;
+}
+
+.horizonBlock {
+    display: inline-flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.button {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
+
+.bt {
+    width: 100px;
+}
