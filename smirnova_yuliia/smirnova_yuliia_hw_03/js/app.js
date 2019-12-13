@@ -35,20 +35,20 @@ for(let num5 = -4; num5 <= 100; num5 = num5 + 2) {
 console.log('-----task_06-----');
 for(let num6 = 1; num6 <= 9; num6++) {
         console.log(num6*7);
-    }
+}
 
-// // Task_07 Выведите с помощью цикла коды спецсимволов от 1000 до 2000. Напомню, что спецсимвол получается комбинацией &#число; Например ӆ
-// console.log('-----task_07-----');
-//
-// for(let num7 = 1000; num7 <= 2000; num7++) {
-//     console.log(`&#${num7}`);
-// }
+// Task_07 Выведите с помощью цикла коды спецсимволов от 1000 до 2000.
+// Напомню, что спецсимвол получается комбинацией &#число; Например ӆ
+console.log('-----task_07-----');
+
+for(let num7 = 1000; num7 <= 2000; num7++) {
+    console.log(String.fromCharCode(num7));
+}
 
 // Task_08 Найти сумму чисел от 0 до 100 (включительно). (0+1+2+3+4+5).
 console.log('-----task_08-----');
-let num8 = 0;
 let sum8 = 0;
-for(let num8 = 1; num8 <= 100; num8++) {
+for(let num8 = 0; num8 <= 100; num8++) {
    sum8 = sum8 + num8;
 }
 console.log(sum8);
@@ -56,17 +56,28 @@ console.log(sum8);
 // Task_09 С помощью цикла вывести произведение чисел от 1 до 50.
 console.log('-----task_09-----');
 
+let multi9 = 1;
 for(let num9 = 1; num9 <= 50; num9++) {
-    multiply = num9 * num9;
+    multi9 = multi9 * num9;
 }
-console.log(multiply);
+console.log(multi9);
 
-
-// Task_10
+// Task_10 Заполните массив следующим образом: в первый элемент запишите 'x', во второй 'xx', в третий 'xxx' и так далее. Длину массива вводить через prompt.
 console.log('-----task_10-----');
 
+let arr10 = [];
+let arr10Length = prompt('Введите длинну массива', 3);
+for(let i = 1; i <= arr10Length; i++) {
+    let str10 = '';
+    for(let j = 1; j <= i; j++) {
+        str10 = str10.concat('x');
+    }
+    arr10.push(str10);
+}
+console.log(arr10);
+
 // Task_11
-console.log('-----task_11-----');
+
 
 // Task_12
 console.log('-----task_13-----');
@@ -88,3 +99,8 @@ console.log('-----task_18-----');
 
 // Task_19
 console.log('-----task_19-----');
+// Task_19_01
+
+console.log('-----task_19_01-----');
+
+
