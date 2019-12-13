@@ -76,31 +76,4 @@ for(let i = 1; i <= arr10Length; i++) {
 }
 console.log(arr10);
 
-// Task_11
-
-
-// Task_12
-console.log('-----task_13-----');
-
-// Task_14
-console.log('-----task_14-----');
-
-// Task_15
-console.log('-----task_15-----');
-
-// Task_16
-console.log('-----task_16-----');
-
-// Task_17
-console.log('-----task_17-----');
-
-// Task_18
-console.log('-----task_18-----');
-
-// Task_19
-console.log('-----task_19-----');
-// Task_19_01
-
-console.log('-----task_19_01-----');
-
 
