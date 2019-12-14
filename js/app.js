@@ -89,3 +89,57 @@ for (let m = 1; m <= arr11Length; m++) {
     arr11.push(str11);
 }
 console.log(arr11);
+
+//Task 12
+console.log('*Task 12*');
+let total12 = 0;
+for(let num12 = 0; num12 <= 100; num12++) {
+    total12 = total12 + num12;
+    if (total12 >= 10) {
+        break;
+    }
+}
+console.log(total12);
+
+//Task 13
+console.log('*Task 13*');
+let num13 = [5, 0, 4, 87, 4, 2, 11, 8];
+for (let i = 0; i < num13.length / 2; i++) {
+    [num13[i], num13[num13.length - 1 - i]] = [num13[num13.length - 1 - i], num13[i]];
+}
+console.log(num13.toLocaleString());
+
+//Task 14
+console.log('*Task 14*');
+let str14 = prompt('Введите массив через запятые');
+let arr14 = str14.split(',');
+let total14 = arr14.filter( e => e>0 && e<10 );
+console.log(total14.toLocaleString());
+
+//Task 15
+console.log('*Task 15*');
+let str15 = prompt('Введите массив через запятые');
+let arr15 = str15.split(',');
+let total15 = arr15.filter(e => !(e%2));
+console.log(total15.toLocaleString());
+
+// Task 16
+console.log('*Task 16*');
+let num16 = [1, 2, 3, 4, 5, 6];
+for (let i = 0; i < num16.length; i += 2) {
+    if ((i + 1) < num16.length) {
+        [num16[i], num16[i + 1]] = [num16[i + 1], num16[i]];
+    }
+}
+console.log(num16);
+
+// Task 18
+console.log('*Task 18*');
+let num18 = [[1, 2, 3], [4, 5], [6]];
+let total18 = 0;
+for (let p = 0; p < num18.length; p++) {
+    for (let t = 0; t < num18[p].length; t++) {
+        total18 += num18[p][t];
+    }
+}
+console.log(total18);
