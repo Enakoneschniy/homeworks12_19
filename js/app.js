@@ -126,12 +126,26 @@ console.log(total15.toLocaleString());
 // Task 16
 console.log('*Task 16*');
 let num16 = [1, 2, 3, 4, 5, 6];
-for (let i = 0; i < num16.length; i += 2) {
-    if ((i + 1) < num16.length) {
-        [num16[i], num16[i + 1]] = [num16[i + 1], num16[i]];
+for (let l = 0; l < num16.length; l += 2) {
+    if ((l + 1) < num16.length) {
+        [num16[l], num16[l + 1]] = [num16[l + 1], num16[l]];
     }
 }
 console.log(num16);
+
+// Task 17
+console.log('*Task 17*');
+let num17 = [1, 2, 3, 4, 5, 6];
+for (let q = 0; q < num17.length; q += 2) {
+    if ((q + 1) < num17.length) {
+        [num17[q], num17[q + 1]] = [num17[q + 1], num17[q]];
+    }
+}
+for (let q = 0; q < num17.length / 2; q += 2) {
+    [num17[q], num17[num17.length - 1 - q]] = [num17[num17.length - 1 - q], num17[q]];
+    [num17[q + 1], num17[num17.length - 1 - (q + 1)]] = [num17[num17.length - 1 - (q + 1)], num17[q + 1]];
+}
+console.log(num17.toLocaleString());
 
 // Task 18
 console.log('*Task 18*');
@@ -143,3 +157,54 @@ for (let p = 0; p < num18.length; p++) {
     }
 }
 console.log(total18);
+
+// Task 19.1
+console.log('*Task 19.1*');
+let arr19_1 = [[]];
+for (let a = 1; a <= 10; a++) {
+    arr19_1[a - 1] = [[]];
+    for (let b = 1; b <= 10; b++) {
+        arr19_1[a - 1][b - 1] = (a * b);
+    }
+}
+for (let a = 0; a < arr19_1.length; a++) {
+    console.log(arr19_1[a].toLocaleString());
+}
+
+// Task 19.2
+console.log('*Task 19.2*');
+function selectSymbol(x,y,length) {
+    const minusY = length - y - 1;
+    if (x === y) return '1';
+    if (x === minusY) return '2';
+    if (x > y && x < minusY) return '3';
+    if (x > y && x > minusY) return '4';
+    if (x < y && x > minusY) return '5';
+    if (x < y && x < minusY) return '6';
+    return '-';
+}
+const limit = 20;
+for( let y=0; y<limit; y++ ) {
+    str = '';
+    for( let x=0;x<limit; x++ ) {
+        str += selectSymbol(x,y,limit) + ' ';
+    }
+    console.log(str);
+}
+
+// Task 19.3
+console.log('*Task 19.3*');
+let arr19_3 = [[1]];
+let arr19_3X = 0;
+let arr19_3Y = 10;
+for (let c = 0; c <= arr19_3Y; c++) {
+    arr19_3[c] = [[]];
+    for (let d = 0; d <= arr19_3X + c - 1; d++) {
+        if (d === 0 || d === arr19_3X + c - 1) {
+            arr19_3[c][d] = 1;
+        } else {
+            arr19_3[c][d] = arr19_3[c - 1][d - 1] + arr19_3[c - 1][d];
+        }
+    }
+    console.log(arr19_3[c].toLocaleString());
+}
