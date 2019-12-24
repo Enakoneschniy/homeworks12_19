@@ -140,3 +140,62 @@ console.log(arrLength([3, 8, 2, 15]));
 console.log(arrLength());
 
 //Task 11
+function userInput(number) {
+    if (number > 10)
+        return number ** 2;
+    else if (number < 7)
+        console.log('Число меньше 7');
+    else if (number === 8)
+        return 7;
+    else if (number === 9)
+        return 8;
+}
+
+console.log(userInput(8));
+
+//Task 12
+
+let myString = 'Long word is not a short word';
+
+function ucFirst(string) {
+    return string[0].toUpperCase() + string.slice(1, string.length);
+}
+
+function ucEveryWord(string) {
+    let words = string.split(' ');
+    for (let i = 0; i < words.length; i++ ) {
+       words[i]= ucFirst(words[i]);
+    }
+    return words.join(' ');
+}
+
+
+console.log(ucEveryWord(myString));
+
+//Task 13
+
+let stringHello = 'var_text_hello';
+function ucEveryWord(string) {
+    let words = string.split('_');
+    for (let i = 1; i < words.length; i++ ) {
+        words[i]= ucFirst(words[i]);
+    }
+    return words.join('');
+}
+
+console.log(ucEveryWord(stringHello));
+
+//Task 14
+
+let arr14 = ['I', 'He', 'She', "It", "Us", 'We', 'You'];
+let textCompare = 'Mom';
+function inArray(text, inArray) {
+    for (let i = 0; i < inArray.length; i++) {
+        if (inArray[i] === text)
+            return true;
+        else
+            return false;
+    }
+}
+
+console.log(inArray(textCompare, arr14));
