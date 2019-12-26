@@ -1,5 +1,5 @@
 // Task 01 - для массива
-
+console.log('---Task 01---');
 function arrayFill(element, arrayLength) {
     const array1 = [];
     for(let i = 0; i < arrayLength; i++) {
@@ -12,6 +12,7 @@ let task1Res = arrayFill('x', 5);
 console.log(task1Res);
 
 // task 02
+console.log('---Task 02---');
 let arr = [
     [
         [1, 2],
@@ -41,6 +42,7 @@ console.log(task2Res);
 
 
 //Task 03
+console.log('---Task 03---');
 function isNumberInRange(number) {
     if (number < 10 && number > 0) {
        return true;
@@ -52,7 +54,7 @@ let task3Res = isNumberInRange(0);
 console.log(task3Res);
 
 //Task 04
-
+console.log('---Task 04---');
 function isEven(number) {
     if (number % 2 === 0) {
         return true;
@@ -64,6 +66,7 @@ let task4Res = isEven(224);
 console.log(task4Res);
 
 //Task 05
+console.log('---Task 05---');
 
 let arrNums = [1, 5, 7, 8, 3, 106, 34, 22, 3, 11, 20, 0, 1032];
 
@@ -81,6 +84,7 @@ function evenFilter(array) {
 console.log(evenFilter(arrNums));
 
 //Task 06
+console.log('---Task 06---');
 
 function getDivisors(number) {
     let divisors = [];
@@ -96,6 +100,7 @@ let task6Res = getDivisors(86);
 console.log(task6Res);
 
 //Task 07
+console.log('---Task 01---');
 
 function power(number, power) {
     console.log(number ** power);
@@ -104,6 +109,7 @@ function power(number, power) {
 power(2, 10);
 
 //Task 08
+console.log('---Task 08---');
 
 function userAge(age) {
     if (age > 16)
@@ -116,6 +122,8 @@ userAge(29);
 
 
 //Task 09
+console.log('---Task 09---');
+
 function userAge9(age) {
     if (age >= 16)
         console.log('Добро пожаловать');
@@ -128,6 +136,7 @@ function userAge9(age) {
 userAge9(16);
 
 //Task 10
+console.log('---Task 10---');
 
 function arrLength(array) {
     if (array === undefined)
@@ -140,6 +149,7 @@ console.log(arrLength([3, 8, 2, 15]));
 console.log(arrLength());
 
 //Task 11
+console.log('---Task 11---');
 function userInput(number) {
     if (number > 10)
         return number ** 2;
@@ -154,8 +164,9 @@ function userInput(number) {
 console.log(userInput(8));
 
 //Task 12
+console.log('---Task 12---');
 
-let myString = 'Long word is not a short word';
+let myString = 'Long word is not a short word.';
 
 function ucFirst(string) {
     return string[0].toUpperCase() + string.slice(1, string.length);
@@ -173,6 +184,7 @@ function ucEveryWord(string) {
 console.log(ucEveryWord(myString));
 
 //Task 13
+console.log('---Task 13---');
 
 let stringHello = 'var_text_hello';
 function ucEveryWord(string) {
@@ -186,16 +198,55 @@ function ucEveryWord(string) {
 console.log(ucEveryWord(stringHello));
 
 //Task 14
+console.log('---Task 14---');
 
 let arr14 = ['I', 'He', 'She', "It", "Us", 'We', 'You'];
 let textCompare = 'Mom';
 function inArray(text, inArray) {
     for (let i = 0; i < inArray.length; i++) {
         if (inArray[i] === text)
-            return true;
+           return true;
         else
-            return false;
+           return false;
     }
 }
 
 console.log(inArray(textCompare, arr14));
+
+//Task 15
+console.log('---Task 15---');
+
+let string15 = '123456';
+
+function swapPairs(string) {
+    let newString = [];
+    for (let i = 0; i < string.length - 1; i += 2) {
+        newString[i + 1] = string[i];
+    }
+    for (let i = 1; i <string.length; i += 2) {
+        newString[i - 1] = string[i];
+    }
+    if (string.length % 2 === 1)
+        newString.push(string[string.length - 1]);
+    return newString.join('');
+}
+
+
+let newString = swapPairs(string15);
+console.log(newString);
+
+//Task 16 - in progress
+console.log('---Task 16---');
+
+
+function a() {
+    let num = 0;
+    console.log(num);
+    let b = function() {
+        console.log(num);
+    };
+    return b;
+}
+
+let fc = a();
+
