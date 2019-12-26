@@ -1,0 +1,30 @@
+{
+  "name": "homeworks12_19",
+  "version": "1.0.0",
+  "description": "1) Clone this repository ``git clone https://github.com/Enakoneschniy/homeworks12_19.git``",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel -p 3000 watch ./*/*.html --out-dir dist --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enakoneschniy/homeworks12_19.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enakoneschniy/homeworks12_19/issues"
+  },
+  "homepage": "https://github.com/Enakoneschniy/homeworks12_19#readme",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.7.4"
+  }
+}
