@@ -386,10 +386,3 @@ function filter(array, fn) {
 
 // Check
 // console.log(filter([1, 2, 3, 4, 5, 6, 7, 8], isEven))
-
-let array = [1, 2, 3],
-    arr2 = [3, 4, 5]
-
-console.log(array.push(arr2));
-console.log(array);
-
