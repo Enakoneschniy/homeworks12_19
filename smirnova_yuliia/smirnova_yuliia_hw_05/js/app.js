@@ -1,5 +1,4 @@
 'use strict';
-
 //Task 01
 console.log('---Task 01---');
 
@@ -68,6 +67,110 @@ function rowStraight(n) {
 }
 
 console.log(rowStraight(6));
+
+//Task 06
+console.log('---Task 06---');
+
+// import Worker from "./classes/Worker"
+
+function Worker(name, surname, rate, days) {
+    this.name = name;
+    this.surname = surname;
+    this.rate = rate;
+    this.days = days;
+}
+
+Worker.prototype.getSalary = function () {
+    return this.rate * this.days;
+};
+
+const oleg = new Worker('Oleg', 'Olegov', 18, 22);
+const vlodek = new Worker('Vlodek', 'Brzhynski', 13, 12);
+
+console.log(oleg.getSalary());
+console.log(vlodek.getSalary());
+
+//Task 07
+console.log('---Task 07 & 08 ---');
+
+class PrivateWorker {
+    constructor(name, surname, rate, days) {
+    }
+
+    #name = 'Mahmud';
+    #surname = 'Ali';
+    #rate = 40;
+    #days = 5;
+
+    get name() {
+        return this.#name
+    }
+
+    get rate() {
+        return this.#rate
+    }
+
+    get surname() {
+        return this.#surname
+    }
+
+    get days() {
+        return this.#days
+    }
+
+    set rate(value) {
+        if (typeof value !== 'string' && value > 0) {
+            this.#rate = value
+        }
+    }
+
+    set days(value) {
+        if (typeof value !== 'string' && value > 0) {
+            this.#days = value
+        }
+    }
+}
+
+const mahmud = new PrivateWorker('Mahmud', 'Ali', 40, 5);
+console.log(mahmud);
+console.log(mahmud.rate);
+console.log(mahmud.days);
+
+//Task 09
+
+//Task 10
+console.log('---Task 10 ---');
+
+class User {
+
+    constructor(name, surname, year) {
+        this.name = name;
+        this.surname = surname;
+        this.year = year;
+    }
+
+    getFullName() {
+        return this.name + ' ' + this.surname;
+    }
+
+    getCourse() {
+        let currentYear = 2019;
+        return currentYear - this.year;
+    }
+}
+
+class Student extends User {
+    constructor(name, surname, year = 2016) {
+        super(name, surname, year);
+    }
+}
+
+const student = new Student('Иван', 'Иванов', 2016);
+console.log(student.name);
+console.log(student.surname);
+console.log(student.getFullName());
+console.log(student.year);
+console.log(student.getCourse());
 
 //Task 12
 console.log('---Task 12---');
@@ -181,3 +284,7 @@ const newObj = {
 };
 
 console.log(Object.keys(newObj));
+
+//Task 22
+
+
