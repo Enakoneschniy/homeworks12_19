@@ -12,10 +12,16 @@ class Worker {
         return this._surname;
     }
 
+    set rate(rate) {
+        this._rate = rate;
+    }
     get rate() {
         return this._rate;
     }
 
+    set days(days) {
+        this._days = days;
+    }
     get days() {
         return this._days;
     }
@@ -38,4 +44,6 @@ const worker2 = new Worker("paul", "oslo", 91, 15);
 console.log(worker.name);
 console.log(worker.getSalary());
 console.log(worker2.name);
+console.log(worker2.getSalary());
+worker2.rate = 120;
 console.log(worker2.getSalary());
