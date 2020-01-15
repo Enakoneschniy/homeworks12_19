@@ -1,0 +1,23 @@
+html, body {
+    width: 100%;
+    background-color: #171717;
+    color: orange;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    text-align: center;
+    margin: 30px 0;
+    border-bottom: 1px solid orange;
+    font-size: 30pt;
+}
+.lord-menu {
+    text-align: center;
+}
+.choose-text {
+    font-size: 22pt;
+}
+#btn {
+    display: flex;
+    margin: 10px auto;
+}
