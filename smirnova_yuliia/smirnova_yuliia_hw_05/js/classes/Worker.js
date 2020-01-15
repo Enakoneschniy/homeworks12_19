@@ -5,4 +5,8 @@ export default class Worker {
         this.rate = rate;
         this.days = days;
     }
+
+    getSalary () {
+        return this.rate * this.days;
+    };
 }

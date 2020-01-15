@@ -1,4 +1,5 @@
 'use strict';
+import Worker from "./classes/Worker"
 //Task 01
 console.log('---Task 01---');
 
@@ -71,18 +72,15 @@ console.log(rowStraight(6));
 //Task 06
 console.log('---Task 06---');
 
-// import Worker from "./classes/Worker"
 
-function Worker(name, surname, rate, days) {
-    this.name = name;
-    this.surname = surname;
-    this.rate = rate;
-    this.days = days;
-}
+//
+// function Worker(name, surname, rate, days) {
+//     this.name = name;
+//     this.surname = surname;
+//     this.rate = rate;
+//     this.days = days;
+// }
 
-Worker.prototype.getSalary = function () {
-    return this.rate * this.days;
-};
 
 const oleg = new Worker('Oleg', 'Olegov', 18, 22);
 const vlodek = new Worker('Vlodek', 'Brzhynski', 13, 12);
@@ -94,13 +92,15 @@ console.log(vlodek.getSalary());
 console.log('---Task 07 & 08 ---');
 
 class PrivateWorker {
-    constructor(name, surname, rate, days) {
-    }
 
     #name = 'Mahmud';
     #surname = 'Ali';
     #rate = 40;
     #days = 5;
+
+    constructor(name, surname, rate, days) {
+    }
+
 
     get name() {
         return this.#name
@@ -137,6 +137,30 @@ console.log(mahmud.rate);
 console.log(mahmud.days);
 
 //Task 09
+console.log('---Task 9 ---');
+
+class MyString {
+    constructor(string) {
+        this.string = string;
+    }
+
+    reverse() {
+        return this.string.split("").reverse().join("");
+    }
+
+    ucFirst() {
+        this.string.toUpperCase()
+    }
+
+    ucWords() {
+
+    }
+
+}
+
+const str = new MyString('abcde');
+console.log(str.reverse());
+console.log(str.ucFirst('a'));
 
 //Task 10
 console.log('---Task 10 ---');
@@ -154,7 +178,7 @@ class User {
     }
 
     getCourse() {
-        let currentYear = 2019;
+        let currentYear = new Date().getFullYear();
         return currentYear - this.year;
     }
 }
@@ -286,5 +310,104 @@ const newObj = {
 console.log(Object.keys(newObj));
 
 //Task 22
+
+class Hamburger {
+    constructor(size, staffing) {
+        this.staffing = staffing;
+        this.size = size;
+    }
+
+    addTopping() {
+
+    }
+
+    calculateCalories() {
+
+    }
+
+    calculatePrice() {
+        return this.price
+    }
+
+}
+
+
+// const staffing = [
+//     {
+//         name: 'cheese',
+//         price: 10,
+//         calories: 20
+//     },
+//
+//     {
+//         name: 'salad',
+//         price: 20,
+//         calories: 5
+//     },
+//
+//     {
+//         name: 'potato',
+//         price: 15,
+//         calories: 10
+//     }
+// ];
+//
+// const topping = [
+//     {
+//         name: 'seasoning',
+//         price: 15,
+//         calories: 0
+//     },
+//
+//     {
+//         name: 'mayonnaise',
+//         price: 20,
+//         calories: 5
+//     }
+//
+// ];
+
+const small = {
+    price: 50,
+    calories: 20
+};
+
+const big = {
+    price: 100,
+    calories: 40
+};
+
+const cheese = {
+    price: 10,
+    calories: 20
+};
+
+const salad = {
+    price: 20,
+    calories: 5
+};
+
+const potato = {
+    price: 15,
+    calories: 10
+};
+
+const seasoning = {
+    price: 15,
+    calories: 0
+};
+
+const mayonnaise = {
+    price: 20,
+    calories: 5
+};
+
+const smallHamburger = new Hamburger(small, cheese, seasoning);
+const bigHamburger = new Hamburger(big, potato, mayonnaise);
+console.log(smallHamburger.calculatePrice);
+console.log(bigHamburger.calculateCalories);
+
+
+
 
 
