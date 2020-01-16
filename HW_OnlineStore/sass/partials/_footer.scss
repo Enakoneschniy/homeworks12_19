@@ -1,0 +1,29 @@
+.footer {
+  display: inline-block;
+  height: 88px;
+  width: 100%;
+
+  .footer_descript {
+    display: inline-block;
+    margin-top: 33px;
+
+    @include fnt_footer;
+    color: #7f9fa2;
+  }
+
+  .footer_nav {
+    float: right;
+    margin-top: 33px;
+
+
+    li {
+      display: inline-block;
+
+      a, span {
+        @include fnt_footer;
+        color: #84abae;
+      }
+    }
+  }
+
+}

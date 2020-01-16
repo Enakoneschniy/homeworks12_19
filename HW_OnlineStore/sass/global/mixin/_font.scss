@@ -1,0 +1,70 @@
+@mixin fnt_contact_title{
+  color: #c7c7c7;
+  font-family: "Arial - Italic MT";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 22.54px;
+  font-style: italic;
+}
+
+@mixin fnt_contact{
+  color: #9bbe8f;
+  font-family: "Arial - Bold Italic MT";
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 22.54px;
+  font-style: italic;
+}
+
+@mixin fnt_h1 {
+  color: #5290b5;
+  font-family: "Arial";
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 48px;
+}
+
+@mixin fnt_descript_banner {
+  color: #87abbf;
+  font-family: "Arial";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+}
+
+@mixin fnt_btn_banner {
+  font-family: "Arial - Bold MT";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+@mixin fnt_search_edit {
+  color: #979797;
+  font-family: Verdana;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 27px;
+  text-indent: 5px;
+}
+
+@mixin fnt_nav {
+  color: #ffffff;
+  font-family: "Arial - Bold MT";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+}
+@mixin fnt_content_title{
+  font-family: "Arial - Bold MT";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 27px;
+}
+
+@mixin fnt_footer{
+  font-family: Verdana;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+}

@@ -1,0 +1,51 @@
+@mixin _btn_cntr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ahref ----------------------------------------------------*/
+@mixin href_btn_baner {
+  @include _btn_cntr;
+
+  width: 145px;
+  height: 38px;
+  background-color: #fc6700;
+}
+
+@mixin href_btn_filter {
+    @include _btn_cntr;
+    height: 38px;
+  }
+
+@mixin href_btn__namber_page {
+   @include _btn_cntr;
+
+  width: 47px;
+  height: 48px;
+}
+@mixin href_btn__namber_previos {
+  @include _btn_cntr;
+
+  width: 132px;
+  height: 48px;
+}
+@mixin href_btn__namber_next {
+  @include _btn_cntr;
+
+  width: 93px;
+  height: 48px;
+}
+@mixin href_btn_nav {
+  @include _btn_cntr;
+
+  height: 48px;
+}
+/* Button ----------------------------------------------------*/
+@mixin btn_search {
+  @include _btn_cntr;
+
+  width: 80px;
+  height: 38px;
+  border: 1px solid #9fed7f;
+  background-color: #c3fbae;
+}

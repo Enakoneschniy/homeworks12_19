@@ -1,0 +1,75 @@
+header {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+
+  img {
+    width: 278px;
+    height: 45px;
+
+    margin-top: 33px;
+    margin-bottom: 33px;
+  }
+
+  .logo_descript {
+
+    .logo_cont_tittle {
+      @include fnt_contact_title;
+      text-align: right;
+      margin-top: 39px;
+
+    }
+
+    .logo_cont {
+      @include fnt_contact;
+      text-align: right;
+
+    }
+  }
+}
+
+nav {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 48px;
+  background: $color_focus_off_btn;
+  margin-bottom: 20px;
+
+  li {
+    display: inline-block;
+    margin: auto -4px auto auto;
+    a{ padding: 0 20px;}
+    .nav_ahref{
+      @include fnt_nav;
+      @include href_btn_nav;
+    }
+    .on_focus_nav{
+      background-color: $color_focus_on_btn;
+    }
+    .off_focus_nav{
+      background-color: $color_focus_off_btn;
+    }
+  }
+
+
+  li:last-child {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+  }
+
+      img {
+        height: 22px;
+        width: 24px;
+        margin-left: 6px;
+      }
+
+}
+

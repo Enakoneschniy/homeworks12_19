@@ -1,0 +1,59 @@
+.aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 961px;
+  height: 68px;
+  border: 1px solid #caf8fc;
+  background-color: #e3fafc;
+  margin-top: 10px;
+
+
+  div {
+    display: inline-block;
+  }
+
+  .aside_left {
+    a {
+      @include href_btn__namber_previos;
+      @include fnt_nav;
+      margin-left: 10px;
+    }
+  }
+
+  .aside_center {
+    a {
+      @include href_btn__namber_page;
+      @include fnt_nav;
+      margin-left: 3px;
+    }
+  }
+
+  .aside_right {
+    a {
+      @include href_btn__namber_next;
+      @include fnt_nav;
+      margin-right: 10px;
+    }
+  }
+
+  .off_activ_as {
+    background-color: $color_activ_off_btn;
+  }
+
+  .on_focus_as {
+    background-color: $color_focus_on_btn;
+  }
+
+  .off_focus_as {
+    background-color: $color_focus_off_btn;
+  }
+
+  .on_activ_as {
+    background-color: $color_focus_off_btn;
+  }
+
+}
+

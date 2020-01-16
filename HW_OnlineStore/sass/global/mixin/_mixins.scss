@@ -1,0 +1,143 @@
+@mixin box-treatment {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+@mixin user-select($option) {
+  user-select: $option;
+  -webkit-touch-callout: $option;
+  -webkit-user-select: $option;
+  -khtml-user-select: $option;
+  -moz-user-select: $option;
+  -ms-user-select: $option;
+}
+
+@mixin transition-treatment_1 {
+  -webkit-transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+@mixin transition-treatment_2 {
+	-webkit-transition: all 400ms linear;
+	        transition: all 400ms linear;
+}
+
+@mixin transition($time) {
+  -webkit-transition: all $time ease-out;
+  -moz-transition: all $time ease-out;
+  -ms-transition: all $time ease-out;
+  -o-transition: all $time ease-out;
+  transition: all $time ease-out;
+}
+
+@mixin transform($argument) {
+	   -moz-transform: $argument;
+	     -o-transform: $argument;
+	    -ms-transform: $argument;
+	-webkit-transform: $argument;
+          transform: $argument;
+}
+
+@mixin transform-origin ($origin) {
+    -moz-transform-origin: $origin;
+	     -o-transform-origin: $origin;
+	    -ms-transform-origin: $origin;
+	-webkit-transform-origin: $origin;
+          transform-origin: $origin;
+}
+
+
+@mixin column-treatment($columns, $gap) {
+	-webkit-column-count: $columns;
+	-moz-column-count: $columns;
+	column-count: $columns;
+	-webkit-column-gap: $gap;
+	-moz-column-gap: $gap;
+	column-gap: $gap;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+@mixin clearfix {
+  &:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+  }
+}
+@mixin vertical-align{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+@mixin no-align {
+  top:0;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+@mixin background-size($type: cover){
+  -moz-background-size: $type;
+  -webkit-background-size: $type;
+  background-size: $type;
+}
+@mixin background-clip($val: padding-box) {
+  -webkit-background-clip: $val;
+  -moz-background-clip: $val;
+}
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}
+@mixin transition-delay($number) {
+  -webkit-transition-delay: $number;
+  transition-delay: $number;
+}
+
+@mixin animation ($argument) {
+  -webkit-animation: $argument;
+  animation: $argument;
+}
+
+@mixin keyframes($animationName) {
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName}  {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue) + px;
+  font-size: ($sizeValue / 10) + rem;
+} /*usage  @include font-size(13);*/
+
+/* My Mixin ----------------------------------------------------*/
+
+@mixin mrk_dvlp {
+  border: 1px solid #e21a22;
+  background: azure;
+}

@@ -1,0 +1,36 @@
+.banner {
+  img{
+    width: 960px;
+    height: 171px;
+
+  }
+  .banner_item {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 26px;
+
+    .title_banner{
+      @include fnt_h1;
+      text-align: right;
+    }
+
+    .descript_banner{
+      @include fnt_descript_banner;
+      text-align: right;
+      margin-top: 2px;
+    }
+
+    div {
+      float: right;
+      margin-top: 22px;
+
+      .banner_btn{
+        @include fnt_btn_banner;
+        color: #fffcfa;
+
+        @include href_btn_baner;
+      }
+    }
+  }
+}
