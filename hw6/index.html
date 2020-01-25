@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <span>Users list</span>
+    </header>
+    <div class="userinfo hidden">
+        <section class="title">
+            <h1>User info</h1>
+        </section>
+        <div class="infosection">
+
+        </div>
+        <section class="wrap">
+            <button class='ok-btn'>
+                OK
+            </button>
+        </section>
+    </div>
+    <div class="adduser hidden">
+        <h1 class="title">Add User</h1>
+        <form id='userinputs'>
+            <div class="flex-div">
+                <section class="inputs">
+                    <p>Enter name:</p>
+                    <input required type="text" name="name">
+                    <p>Enter username:</p>
+                    <input required type="text" name="username">
+                    <p>Enter email:</p>
+                    <input required type="text" name="email">
+                    <p>Enter phone:</p>
+                    <input type="text" name="phone">
+                    <p>Enter website:</p>
+                    <input type="text" name="website">
+                </section>
+                <section class="inputs">
+                    <p>Enter company:</p>
+                    <input type="text" name="company">
+                    <p>Enter street:</p>
+                    <input type="text" name="street">
+                    <p>Enter suite:</p>
+                    <input type="text" name="suite">
+                    <p>Enter city:</p>
+                    <input type="text" name="city">
+                    <p>Enter zipcode:</p>
+                    <input type="text" name="zipcode"><br>
+                </section>
+            </div>
+            <section class="wrap">
+                <input type="submit" value="Add" class="ok-btn">
+                <button type="button" class="cancel-btn ok-btn">Cancel</button>
+            </section>
+        </form>
+    </div>
+    <div class='add'>
+        <span>Add user</span>
+        <button>+</button>
+    </div>
+    <table id="users-table" class="users-table">
+        <tr class="table-header">
+            <td type="name">
+                Name
+            </td>
+            <td type="username">
+                Username
+            </td>
+            <td type="email">
+                Email
+            </td>
+            <td type="remove">
+                Remove
+            </td>
+        </tr>
+        <tbody class="userlist">
+        </tbody>
+    </table>
+    <div class="blocked hidden"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>

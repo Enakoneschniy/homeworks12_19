@@ -1,0 +1,243 @@
+.header {
+    width: 100%;
+    background-color: black;
+    height: 50px;
+    position: relative;
+    border-radius: 0 0 15px 15px;
+    top: -10px;
+}
+
+.header span {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    left: 15px;
+    top: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+
+}
+
+.add {
+    display: block;
+    background-color: black;
+    position: relative;
+    width: 140px;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+.add span {
+    position: absolute;
+    left: 55px;
+    top: 13px;
+    font-size: 20px;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.add button {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    height:40px;
+    width:40px;
+    border-radius: 20px;
+    border: 3px solid white;
+    background-color: black;
+    font-size: 30px;
+    color: white;
+}
+
+
+
+.add:hover {
+    background-color: white;
+}
+
+.add:hover span{
+    color:black;
+}
+
+.add:hover button{
+    color:black;
+    background-color: white;
+    border-color: black;
+}
+
+.users-table {
+    width: 100%;
+    position: relative;
+    background-color: gray;
+    top: 10px;
+    border-spacing: 0px;
+    cursor: pointer;
+}
+
+.users-table td {
+    height: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.table-header {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+.remove {
+    width: 10px;
+}
+
+.remove-btn {
+    width: 20px;
+    height:20px;
+    border: 1px solid black;
+    font-size: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.remove-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.userinfo {
+    width: 33%;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: fixed;
+    top: 20%;
+    left:33%;
+    z-index: 1000;
+}
+
+.title {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+}
+
+.light-tr {
+    background-color: white;
+}
+
+.dark-tr {
+    background-color: rgb(218, 214, 214);
+}
+
+.userinfo section {
+    margin: 0 0 10px 10px;
+}
+
+.userinfo section h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 10px;
+}
+
+.userinfo section p{
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.ok-btn{
+    width: 20%;
+    height:30px;
+    font-size: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ok-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+
+.adduser {
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    position: fixed;
+    top: 20%;
+    left:33%;
+    z-index: 1000;
+}
+
+#userinputs {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex-div {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+#userinputs p {
+    margin: 5px 0;
+}
+
+.inputs {
+
+    margin: 10px;
+}
+
+.submit-btn{
+    width: 20%;
+    height:30px;
+    font-size: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 1px solid black;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin: 5px;
+}
+
+.submit-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.blocked {
+    background-color: white;
+    opacity: 50%;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.hidden {
+    display: none;
+}
